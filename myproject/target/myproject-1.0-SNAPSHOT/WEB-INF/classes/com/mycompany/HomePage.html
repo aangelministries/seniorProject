@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+		<meta charset="utf-8" />
+		<title>Apache Wicket Quickstart</title>
+		<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+	</head>
+	<body style="text-align: center, margin-top: 60px;">
+	<button wicket:id="logout">Log Out</button>
+	<div wicket:id="loginContainer">
+			<label wicket:id="loginError"></label>
+			<label>Please enter login information</label>
+			<input wicket:id="username">
+			<input wicket:id="password">
+			<button wicket:id="submit">Submit</button>
+		</div>
+		<div wicket:id="homeContainer">
+			<button wicket:id="depositOption">Deposit</button>
+			<button wicket:id="dispenseOption">Dispense</button>
+		</div>
+		<div wicket:id="depositContainer">
+			<label>Enter Amount For Deposit</label>
+			<input wicket:id="depositAmount">
+			<button wicket:id="depositAction">Deposit</button>
+		</div>
+		<div wicket:id="dispenseContainer">
+			<label>Enter Amount For Dispense</label>
+			<input wicket:id="dispenseAmount">
+			<button wicket:id="dispenseAction">Dispense</button>
+		</div>
+	</body>
+</html>
